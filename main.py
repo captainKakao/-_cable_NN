@@ -42,8 +42,8 @@ for x in os.listdir(file_src):
 
 model = keras .Sequential()
 model.add(Dense(units=11, input_shape=(11,), activation='tanh'))
-model.add(Dense(units=32, activation='tanh'))
-model.add(Dense(units=32, activation='tanh'))
+model.add(Dense(units=8, activation='tanh'))
+model.add(Dense(units=8, activation='tanh'))
 model.add(Dense(units=33, activation='tanh'))
 print(model.summary())
 model.compile(loss='mean_squared_error', optimizer=keras.optimizers.Adam(0.001))
